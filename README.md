@@ -75,6 +75,19 @@ To allow Git to track your changes, you need to add them to the staging area and
 Now, you wan to requst merging your new feature to the main branch in the remote repository. Before doing so, you first need to push your branch to the remote repositroy:
 ```
 > git push origin line_ykkan
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 270 bytes | 270.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'line_ykkan' on GitHub by visiting:
+remote:      https://github.com/ykkan/EIC-EIN-Github-Playground/pull/new/line_ykkan
+remote:
+To github.com:ykkan/EIC-EIN-Github-Playground.git
+ * [new branch]      line_ykkan -> line_ykkan
 ```
 
 ## Create a pull request (PR) 
