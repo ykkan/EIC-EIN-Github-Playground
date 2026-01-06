@@ -40,5 +40,5 @@ jobs:
           else
             gh pr review "${{ github.event.pull_request.number }}" \
             --request-changes \
-            --body "Please change change the file name of the newly lattice to: `$expected_filename"`
+            --body "Please rename the newly added lattice file to:  \`$expected_filename\`"
           fi
