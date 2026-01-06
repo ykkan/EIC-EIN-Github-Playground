@@ -39,6 +39,6 @@ jobs:
             --body "Brilliant design! Your PR will be merged."
           else
             gh pr review "${{ github.event.pull_request.number }}" \
-            --comment \
-            --body "Please change your newly added lattice file name to: $expected_filename"
+            --request-changes \
+            --body "Please change change the file name of the newly lattice to: `$expected_filename"`
           fi
