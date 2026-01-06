@@ -33,6 +33,8 @@ jobs:
         run: |
           expected_filename="line_${{ github.actor }}.lat"
           added_filename=$(git diff-tree --name-only "$BASE_SHA" "$HEAD_SHA")
+          echo $expected_filename
+          echo $added_filename
           if [ "$added_filename" = "$expected_filename" ]; then
             gh pr review "${{ github.event.pull_request.number }}" \
             --comment \
